@@ -1,0 +1,13 @@
+{
+  "name": "AWSコンソール拡張機能",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "description": "AWSコンソールでアカウント名を表示させる拡張機能です。",
+  "content_scripts": [
+    {
+      "matches": ["https://*.console.aws.amazon.com/*"],
+      "js": ["content.js"],
+      "css": ["content.css"]
+    }
+  ]
+}
